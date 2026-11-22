@@ -11,7 +11,7 @@ let n=p[c],m=n==1?1:n==2?4:n>47&&n<52?2:0,u,v;
 if(c+m>=p.length)return F(9);
 if(n<8){u=n<3?0:n<5?1:n<7?2:3;v=n?n<3?1:n==3?0:n<6?2:3:0}
 else if(n<16)return F(5);
-else if(n<35){u=n==23||n==27?1:2;v=1}
+else if(n<35&&n!=31){u=n==23||n==27?1:2;v=1}
 else if(n<48)return F(5);
 else if(n<53){u=n==49||n==50?1:0;v=0}
 else if(n<64)return F(5);
